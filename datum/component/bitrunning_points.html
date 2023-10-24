@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;component&#x2F;bitrunning_points - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/component/bitrunning_points.html#var">Var Details</a> - <a href="datum/component/bitrunning_points.html#proc">Proc Details</a></header>
+<main>
+<h1>bitrunning_points <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/bitrunning_points.html">bitrunning_points</a></aside>
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 4"/></a></h1>
+
+<p>Attaches a component which listens for a given signal from the item.</p>
+<p>When the signal is received, it will add points to the signaler.</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#var/max_point_range">max_point_range</a></th><td>The range at which we can find the signaler</td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#var/our_spawner">our_spawner</a></th><td>Weakref to the loot crate landmark - where we send points</td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#var/points_per_signal">points_per_signal</a></th><td>The amount of points per each signal</td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#var/signal_type">signal_type</a></th><td>The signal we listen for</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#proc/locate_spawner">locate_spawner</a></th><td>Finds the signaler if it hasn't been found yet.</td></tr>
+            <tr><th><a href="datum/component/bitrunning_points.html#proc/on_event">on_event</a></th><td>Once the specified signal is received, whisper to the spawner to add points.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/max_point_range"><aside class="declaration">var </aside>max_point_range
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 6"/></a></h3>
+        <p>The range at which we can find the signaler</p><h3 id="var/our_spawner"><aside class="declaration">var </aside>our_spawner
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/weakref.html">weakref</a></aside>
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 8"/></a></h3>
+        <p>Weakref to the loot crate landmark - where we send points</p><h3 id="var/points_per_signal"><aside class="declaration">var </aside>points_per_signal
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L10">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 10"/></a></h3>
+        <p>The amount of points per each signal</p><h3 id="var/signal_type"><aside class="declaration">var </aside>signal_type
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L14">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 14"/></a></h3>
+        <p>The signal we listen for</p><h2 id="proc">Proc Details</h2><h3 id="proc/locate_spawner"><aside class="declaration">proc </aside>locate_spawner<aside>() 
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 28"/></a></aside>
+        </h3>
+        <p>Finds the signaler if it hasn't been found yet.</p><h3 id="proc/on_event"><aside class="declaration">proc </aside>on_event<aside>(/<a href="datum.html">datum</a>/source) 
+        
+    
+            <a href="https://github.com/wiverns/effigy-se/blob/15c45939b4744a156cda91430162dfe627b5fa95/code/modules/bitrunning/components/bitrunning_points.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;bitrunning&#x2F;components&#x2F;bitrunning_points.dm 39"/></a></aside>
+        </h3>
+        <p>Once the specified signal is received, whisper to the spawner to add points.</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/wiverns/effigy-se/tree/15c45939b4744a156cda91430162dfe627b5fa95">15c4593</a>
+        (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
+</body>
+</html>
